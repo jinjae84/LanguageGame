@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74553D24-88C0-416F-9C6F-86ECB2980E63}|Program.vcxproj|C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{74553D24-88C0-416F-9C6F-86ECB2980E63}|Program.vcxproj|C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{74553D24-88C0-416F-9C6F-86ECB2980E63}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\Program\\Source.c",
+              "DocumentMoniker": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Program\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\Program\\Source.c",
+              "ToolTip": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-10T11:06:23.745Z",
               "EditorCaption": ""
