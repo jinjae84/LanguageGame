@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{74553D24-88C0-416F-9C6F-86ECB2980E63}|Program.vcxproj|C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{74553D24-88C0-416F-9C6F-86ECB2980E63}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD14352-7AD9-46C5-9ADC-A0F2601E5234}|..\\Class 2th (Double Buffering)\\Class 2th (Double Buffering).vcxproj|C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Class 2th (Double Buffering)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -24,9 +27,43 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAcwHYAAAAbAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowEAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-10T11:06:23.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e57f1865-9e2c-45e8-ba6e-cbdccfd596f2",
+        "Display": 1,
+        "X": 201,
+        "Y": 56,
+        "Width": 1554,
+        "Height": 752,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Class 2th (Double Buffering)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class 2th (Double Buffering)\\Source.c",
+              "ToolTip": "C:\\Users\\\uBA85\uC9C4\uC7AC\\Desktop\\LanguageGame\\Class 2th (Double Buffering)\\Source.c",
+              "RelativeToolTip": "..\\Class 2th (Double Buffering)\\Source.c",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-13T11:04:05.815Z",
               "EditorCaption": ""
             }
           ]

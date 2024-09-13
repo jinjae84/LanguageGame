@@ -1,139 +1,74 @@
 #include <stdio.h>
-#include <Windows.h>
 #include <conio.h>
-#include <string.h>
 
+#define WIDTH 11
+#define HEIGHT 11
 #define UP 72
 #define LEFT 75
 #define RIGHT 77
 #define DOWN 80
 
-int screenIndex;
-HANDLE screen[2];
-
-void Initialize()
+typedef struct Character
 {
+	int x;
+	int y;
+	const char * shape;
+}Character;
 
-	CONSOLE_CURSOR_INFO cursor;
 
-	// 화면 버퍼를 2개 생성합니다.
-	screen[0] = CreateConsoleScreenBuffer
-	(
-		GENERIC_READ | GENERIC_WRITE,
-		0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL
-	);
 
-	screen[1] = CreateConsoleScreenBuffer
-	(
-		GENERIC_READ | GENERIC_WRITE,
-		0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL
-	);
-
-	cursor.dwSize = 1;
-	cursor.bVisible = FALSE;
-
-	SetConsoleCursorInfo(screen[0], &cursor);
-	SetConsoleCursorInfo(screen[1], &cursor);
-}
-
-void Flip()
+char maze[HEIGHT][WIDTH] =
 {
-	SetConsoleActiveScreenBuffer(screen[screenIndex]);
+	{'1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'},
+	{'1', '0', '1', '0', '0', '0', '0', '0', '0', '0', '1'},
+	{'1', '0', '1', '1', '1', '1', '1', '0', '1', '0', '1'},
+	{'1', '0', '1', '1', '1', '1', '1', '0', '1', '1', '1'},
+	{'1', '0', '1', '1', '1', '0', '0', '0', '0', '0', '1'},
+	{'1', '0', '1', '0', '1', '0', '1', '1', '1', '0', '1'},
+	{'1', '0', '1', '0', '1', '0', '1', '1', '1', '0', '1'},
+	{'1', '0', '1', '0', '0', '0', '0', '0', '1', '0', '1'},
+	{'1', '0', '1', '0', '1', '0', '1', '0', '1', '0', '1'},
+	{'1', '0', '0', '0', '1', '0', '0', '0', '1', '0', '1'},
+	{'1', '1', '1', '1', '1', '1', '1', '1', '1', '2', '1'}
+};
 
-	screenIndex = !screenIndex;
-}
 
-void Clear()
+
+void Render()
 {
-	COORD position = { 0, 0 };
-
-	DWORD dword;
-
-	FillConsoleOutputCharacter
-	(
-		screen[screenIndex], ' ', 50 * 20, position, &dword
-
-	);
-}
-
-void Release()
-{
-	CloseHandle(screen[0]);
-	CloseHandle(screen[1]);
-}
-
-void Render(int x,  int y, const char *string)
-{
-	DWORD dword;
-	COORD position = { x, y };
-
-	SetConsoleCursorPosition(screen[screenIndex], position);
-	WriteFile(screen[screenIndex], string, strlen(string), &dword, NULL);
-}
-
-void Position(int x, int y)
-{
-	// X와 Y축을 설정하는 구조체 입니다. 
-	COORD position = {x, y};
-
-	// 콘솔 커서의 좌표를 설정하는 함수입니다.
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
-
+	for (int i = 0; i < HEIGHT; i++)
+	{
+		for (int j = 0; j < WIDTH; j++)
+		{
+			if (maze[i][j] == '1')
+			{
+				printf("■");
+			}
+			else if (maze[i][j] == '0')
+			{
+				printf("  ");
+			}
+			else if (maze[i][j] == '2')
+			{
+				printf("★");
+			}
+		}
+		printf("\n");
+	}
 }
 
 int main()
 {
-	char key = 0;
-	int x = 0;
-	int y = 0;
+	Character character = { 1, 1, "◎" };
+	
 
-	Initialize();
-
-	while (1)
-	{
-		Flip();
-
-		Clear();
-
-
-		if (_kbhit())
-		{
-			key = _getch();
-
-			if (key == -32)
-			{
-				key = _getch();
-			}
-
-
-
-
-			switch (key)
-			{
-			case UP:
-				y -= 1;
-				// printf("UP\n");
-				break;
-			case LEFT:
-				x -= 2;
-				// printf("LEFT\n");			
-				break;
-			case RIGHT:
-				x += 2;
-				// printf("RIGHT\n");			
-				break;
-			case DOWN:
-				y += 1;
-				// printf("DOWN\n");			
-				break;
-			default: printf("Exception\n");
-				break;
-			}
-
-			
-		}
-		Render(x, y, "★");
-	}
+	Render();
 	
 	return 0;
+
+}
+
+	// Render();
+	// 
+	// return 0;
 }
